@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 700px;
+    margin: 0 auto;
+}
+
+/* マーク回転用 */
+.rotate{
+    transition: 0.2s;
+    transform: rotate(405deg) !important;
+}
+
+/* 1つ目のアコーディオンメニュー */
+.title_1{
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(220, 19, 19);
+    color: white;
+    font-weight: bold;
+}
+.title_1 .open_box{
+    transform: rotate(45deg);
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_1 .fa-plus{
+    transform: rotate(-45deg);
+}
+.title_1 .fa-minus{
+    display: none;
+    transform: rotate(-45deg);
+}
+.ans_1{
+    display: none;
+    border: solid 2px rgb(220, 19, 19);
+    padding: 20px;
+}
+
+/* 2つ目のアコーディオンメニュー */
+.title_2{
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(0, 110, 0);
+    color: white;
+    font-weight: bold;
+}
+.title_2 .open_box{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+}
+.title_2 .fa-plus{
+    transform: rotate(-45deg);
+}
+.title_2 .fa-minus{
+    display: none;
+    transform: rotate(-45deg);
+}
+.ans_2{
+    display: none;
+    border: solid 2px rgb(0, 110, 0);
+    padding: 20px;
+}
+
+/* 3つ目のアコーディオンメニュー */
+.title_3{
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(28,133,216);
+    color: white;
+    font-weight: bold;
+}
+.title_3 .open_box{
+    position: absolute;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+}
+.title_3 .fa-plus{
+    transform: rotate(-45deg);
+}
+.title_3 .fa-minus{
+    display: none;
+    transform: rotate(-45deg);
+}
+.ans_3{
+    display: none;
+    border: solid 2px rgb(28,133,216);
+    padding: 20px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:600px){
+    .wrapper{
+        width: 100%;
+    }
+}
